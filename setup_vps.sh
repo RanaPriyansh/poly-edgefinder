@@ -3,7 +3,7 @@
 
 set -e
 
-echo "=== Thielon Polymarket Edge Finder Setup ==="
+echo "===  Polymarket Edge Finder Setup ==="
 
 # 1. System packages
 echo "Installing system packages..."
@@ -11,7 +11,7 @@ apt update
 apt install -y python3 python3-pip python3-venv git
 
 # 2. Create app directory
-APP_DIR="/opt/thielon-poly-edgefinder"
+APP_DIR="/opt/poly-edgefinder"
 if [ ! -d "$APP_DIR" ]; then
     mkdir -p $APP_DIR
     # Copy project files from current location if run locally

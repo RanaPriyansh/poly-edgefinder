@@ -23,7 +23,7 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Thielon Edge Finder")
+app = FastAPI(title=" Edge Finder")
 
 @dataclass
 class MarketSignal:
@@ -210,7 +210,7 @@ bot = EdgeFinderBot()
 
 @app.get("/")
 async def root():
-    return {"status": "ok", "service": "thielon-edgefinder", "timestamp": datetime.utcnow().isoformat()}
+    return {"status": "ok", "service": "-edgefinder", "timestamp": datetime.utcnow().isoformat()}
 
 @app.get("/health")
 async def health():

@@ -4,7 +4,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Thielon Edge Finder                      │
+│                     Edge Finder                      │
 ├─────────────────────────────────────────────────────────────┤
 │  Data Layer       │     Signal Layer      │  Execution Layer │
 │  ─────────────    │  ─────────────────   │  ──────────────  │
@@ -52,7 +52,7 @@
 ### Success Criteria
 - `data/raw/2026-03-20.jsonl` exists and has >100 records per market
 - No errors in logs after 5 minutes of continuous operation
-- Can SSH into VPS and run `journalctl -u thielon-poly-collector -f` to see live logs
+- Can SSH into VPS and run `journalctl -u -poly-collector -f` to see live logs
 
 ---
 
@@ -299,7 +299,7 @@ After 1 week, if still profitable:
 ## Code Structure Reference
 
 ```
-thielon-poly-edgefinder/
+poly-edgefinder/
 ├── src/
 │   ├── data_collectors/
 │   │   ├── simmer_collector.py
@@ -328,7 +328,7 @@ thielon-poly-edgefinder/
 ├── .gitignore
 ├── setup_vps.sh
 ├── systemd/
-│   └── thielon-poly-collector.service
+│   └── -poly-collector.service
 └── notebooks/
     ├── 01_descriptive_analysis.ipynb
     ├── 02_signal_development.ipynb
@@ -356,7 +356,7 @@ thielon-poly-edgefinder/
 - [ ] `requirements.txt` up to date
 - [ ] `config.yaml` contains all required keys
 - [ ] `.env` created on VPS with all secrets
-- [ ] Systemd service enabled: `systemctl enable thielon-poly-collector`
+- [ ] Systemd service enabled: `systemctl enable -poly-collector`
 - [ ] Logs configured to write to file (not just stdout)
 - [ ] Firewall allows port 22 and 8501 (if needed)
 - [ ] Daily cron job to backup SQLite to remote location

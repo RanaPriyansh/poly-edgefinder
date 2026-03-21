@@ -17,7 +17,7 @@
 ## Category A: Data Collection (Infrastructure)
 
 ### A.1: Deploy to VPS
-- [~] Copy project to VPS /opt/thielon-poly-edgefinder
+- [~] Copy project to VPS /opt/poly-edgefinder
 - [~] Run setup_vps.sh (installs Python, venv, dependencies)
 - [!] Add Simmer API key to .env (waiting on user)
 - [ ] Verify collector runs (test 30 seconds)

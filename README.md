@@ -1,8 +1,8 @@
-# Thielon Polymarket Edge Finder
+#  Polymarket Edge Finder
 
-[![GitHub](https://img.shields.io/badge/GitHub-000000?logo=github)](https://github.com/thielon-apps/thielon-poly-edgefinder)
-[![License](https://img.shields.io/github/license/thielon-apps/thielon-poly-edgefinder)](https://github.com/thielon-apps/thielon-poly-edgefinder/blob/main/LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/thielon-apps/thielon-poly-edgefinder)](https://github.com/thielon-apps/thielon-poly-edgefinder/commits/main)
+[![GitHub](https://img.shields.io/badge/GitHub-000000?logo=github)](https://github.com/RanaPriyansh/poly-edgefinder)
+[![License](https://img.shields.io/github/license/RanaPriyansh/poly-edgefinder)](https://github.com/RanaPriyansh/poly-edgefinder/blob/main/LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/RanaPriyansh/poly-edgefinder)](https://github.com/RanaPriyansh/poly-edgefinder/commits/main)
 
 **Research-driven bot development for 5-minute crypto prediction markets.**
 
@@ -17,16 +17,16 @@
    ```bash
    curl -X POST https://api.simmer.markets/api/sdk/agents/register \
      -H "Content-Type: application/json" \
-     -d '{"name": "thielon-poly-bot", "description": "Trades BTC 5-min"}'
+     -d '{"name": "-poly-bot", "description": "Trades BTC 5-min"}'
    ```
    Save the `api_key` from response.
 
 2. **Deploy to VPS**:
    ```bash
    # On your local machine:
-   scp -r /root/obsidian-hermes-vault/projects/thielon-poly-edgefinder root@213.199.32.246:/opt/
+   scp -r /root/obsidian-hermes-vault/projects/poly-edgefinder root@213.199.32.246:/opt/
    # Then on VPS:
-   cd /opt/thielon-poly-edgefinder
+   cd /opt/poly-edgefinder
    bash setup_vps.sh
    ```
 
@@ -45,15 +45,15 @@
 
 5. **Set up as service** (optional):
    ```bash
-   cp systemd/thielon-poly-collector.service /etc/systemd/system/
-   systemctl enable thielon-poly-collector
-   systemctl start thielon-poly-collector
+   cp systemd/-poly-collector.service /etc/systemd/system/
+   systemctl enable -poly-collector
+   systemctl start -poly-collector
    ```
 
 ## Project Structure
 
 ```
-thielon-poly-edgefinder/
+poly-edgefinder/
 ├── src/                    # Source code
 │   ├── data_collectors/   # Data collection (Simmer, direct Polymarket)
 │   ├── analysis/          # Statistics, backtesting
@@ -116,8 +116,12 @@ See `research/RESEARCH_PROMPTS.md` for full list.
 
 ## Contact
 
-Bot: Hermes Agent (Thielon mode)
+Bot: Hermes Agent ( mode)
 
 ---
 
 **Note**: This project is in early research stage. Do not risk real money until after 1 week of paper trading with validated edge.
+
+---
+
+Made with 🦀 by Thielon
