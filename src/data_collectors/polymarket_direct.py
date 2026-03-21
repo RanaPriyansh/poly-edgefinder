@@ -11,7 +11,7 @@ import time
 import logging
 import datetime
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 from py_clob_client.client import ClobClient
 from py_clob_client.clob_types import BalanceAllowanceParams, AssetType

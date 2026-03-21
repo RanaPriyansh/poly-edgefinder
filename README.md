@@ -1,5 +1,9 @@
 # Thielon Polymarket Edge Finder
 
+[![GitHub](https://img.shields.io/badge/GitHub-000000?logo=github)](https://github.com/thielon-apps/thielon-poly-edgefinder)
+[![License](https://img.shields.io/github/license/thielon-apps/thielon-poly-edgefinder)](https://github.com/thielon-apps/thielon-poly-edgefinder/blob/main/LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/thielon-apps/thielon-poly-edgefinder)](https://github.com/thielon-apps/thielon-poly-edgefinder/commits/main)
+
 **Research-driven bot development for 5-minute crypto prediction markets.**
 
 ## Status
